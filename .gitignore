@@ -32,3 +32,6 @@ logs/
 output/*
 !output/
 .archive/   
+
+python
+python.zip
