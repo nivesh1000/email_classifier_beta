@@ -1,0 +1,34 @@
+# Python
+.python*
+*.pyc
+__pycache__/
+.venv/
+venv/
+env/
+.vscode/
+.idea/
+
+# Flask
+instance/
+
+# pytest
+pytest_cache/
+
+# ctags
+tags
+
+# .env file for managing local environment
+.env
+
+
+# Any other local setting
+local/
+
+# Code coverage
+htmlcov/
+.coverage
+.coverage.*
+logs/
+output/*
+!output/
+.archive/   
