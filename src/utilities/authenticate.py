@@ -13,4 +13,10 @@ def authenticate_user(TENANT_ID,CLIENT_ID,SCOPES):    #email_info is a dictionar
     print(f"🔗 Go to: {flow['verification_uri']} and enter this code: {flow['user_code']}")
     token_response = app.acquire_token_by_device_flow(flow)
     print("✅ Successfully authenticated!")
+    print(token_response)
+    print('-----------------------------------------------')
+    token_response = app.acquire_token_by_refresh_token(
+        token_response["refresh_token"], scopes=SCOPES
+    )
+    print(token_response)
     return token_response["access_token"]
