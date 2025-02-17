@@ -35,3 +35,6 @@ output/*
 
 python
 python.zip
+
+token-my-email.txt
+secret-test.py

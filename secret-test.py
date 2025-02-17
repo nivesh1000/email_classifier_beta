@@ -1,9 +1,6 @@
 import requests
 
-# Replace these with your Azure AD app details
-tenant_id = "ecefbb66-e571-4a04-ad37-82492edec860"
-client_id = "2ec46f47-7192-47af-b640-f5cbb6cbf849"
-client_secret = "ZRT8Q~wS5N2c_qeovKBZYqR-v4e3cBs0h1Wq4c8u"
+
 user_id = "harshit.lohani@cynoteck.com"
 # Step 1: Get Access Token
 token_url = f"https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/token"
