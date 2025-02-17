@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
-from email_fetcher.email_fetcher import fetch_emails_by_page
-from authenticator.authenticator import get_access_token  # Import the function to get the access token
+from Email_Fetcher.email_fetcher import fetch_emails_by_page
+from Authenticator.authenticator import get_access_token  # Import the function to get the access token
 
 # Load environment variables
 load_dotenv()
