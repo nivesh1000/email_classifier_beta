@@ -1,11 +1,6 @@
 import msal
 import requests
 
-# Replace these with your Azure AD app details
-tenant_id = "ecefbb66-e571-4a04-ad37-82492edec860"
-client_id = "2ec46f47-7192-47af-b640-f5cbb6cbf849"
-cert_thumbprint = "10EA8AED98BD728831AC3CBDC82CA4C1E2200566"  # Thumbprint from Azure AD
-private_key_path = "certificate/private_key.pem"  # Path to your private key file
 
 # Load the private key
 with open(private_key_path, "r") as key_file:
