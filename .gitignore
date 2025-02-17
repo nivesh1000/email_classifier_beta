@@ -19,7 +19,8 @@ tags
 
 # .env file for managing local environment
 .env
-
+config/
+certificate/
 
 # Any other local setting
 local/
