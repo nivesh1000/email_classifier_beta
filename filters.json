@@ -1,0 +1,67 @@
+{
+	"success": true,
+	"data": {
+	  "groups": [
+		{
+		  "id": 2,
+		  "name": "Undeliverable",
+		  "filter_type": "body",
+		  "status": "active",
+		  "priority": 4,
+		  "deleted_at": null,
+		  "created_at": "2025-02-13T12:09:57.000000Z",
+		  "updated_at": "2025-02-13T12:09:57.000000Z",
+		  "keywords": []
+		},
+		{
+		  "id": 3,
+		  "name": "Exclusion",
+		  "filter_type": "subject",
+		  "status": "active",
+		  "priority": 1,
+		  "deleted_at": null,
+		  "created_at": "2025-02-14T10:03:48.000000Z",
+		  "updated_at": "2025-02-14T10:03:48.000000Z",
+		  "keywords": [
+			{
+			  "id": 3,
+			  "group_id": 3,
+			  "keyword": "test",
+			  "created_at": "2025-02-14T10:04:09.000000Z",
+			  "updated_at": "2025-02-14T10:04:09.000000Z"
+			},
+			{
+			  "id": 4,
+			  "group_id": 3,
+			  "keyword": "noreply",
+			  "created_at": "2025-02-14T10:04:16.000000Z",
+			  "updated_at": "2025-02-14T10:04:16.000000Z"
+			},
+			{
+			  "id": 5,
+			  "group_id": 3,
+			  "keyword": "do not process",
+			  "created_at": "2025-02-14T10:04:33.000000Z",
+			  "updated_at": "2025-02-14T10:04:33.000000Z"
+			}
+		  ]
+		}
+	  ],
+	  "emailsToRemove": [
+		{
+		  "id": 1,
+		  "email_address": "sadysadaf67@gmail.com",
+		  "status": "pending",
+		  "created_at": "2025-02-17T09:47:21.000000Z",
+		  "updated_at": "2025-02-17T09:47:21.000000Z"
+		},
+		{
+		  "id": 2,
+		  "email_address": "dairyaanchal@gmail.com",
+		  "status": "pending",
+		  "created_at": "2025-02-17T09:47:40.000000Z",
+		  "updated_at": "2025-02-17T09:47:40.000000Z"
+		}
+	  ]
+	}
+  }

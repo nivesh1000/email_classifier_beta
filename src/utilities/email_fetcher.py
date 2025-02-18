@@ -1,17 +1,39 @@
 import requests
+import time
+import os
+import logging
+from authenticate import Authenticator
+# import email_parser
 
+logger = logging.getLogger()
+logger.setLevel("INFO")
 
-def emails_fetcher(access_token,email_url):
-    headers = lambda: {"Authorization": f"Bearer {access_token}"}
+class EmailFetcher:
 
-    try:
-        response = requests.get(email_url, headers=headers())
-        if response.status_code == 200:
-            emails = response.json().get("value", [])
-            return emails
-        else:
-            print("Failed to fetch emails:", response.json())
-            return []
+	def __init__(self):
+		self.authenticator = Authenticator.get_instance() # To Be Updated
+		self.next_link = None
+		
+	def fetch_emails(self):
+		
+		# Token time check? 
+		
+		access_token = self.authenticator.generate_token()
 
-    except requests.exceptions.RequestException as e:
-        print(f"Network Error: {e}")
+		# Use stored graph link:
+		graph_url = self.next_link if self.next_link else "https://graph.microsoft.com/v1.0/me/messages"
+
+		params = {
+			"$filter"="",
+			"$top":5,
+		}
+		headers = {
+			"Authorization": f"Bearer {access_token}",
+		}
+		try:
+			response = requests.get(graph_url, headers = headers, params = params)
+			data = response.json
+			self.next_link = data.get("@odata.nextLink")  # Store next page link
+			return 
+		except requests.RequestException as e:
+			logging.error(f"Failed to fetch emails: {str(e)}")
