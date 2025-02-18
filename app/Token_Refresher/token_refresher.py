@@ -8,17 +8,21 @@ class TokenManager:
     """
     A class for managing access and refresh tokens, including refreshing and updating them in the .env file.
     """
+
     def __init__(self):
         # Load environment variables from .env
         load_dotenv()
-        
+
         # Read credentials from the config module
         self.tenant_id = TENANT_ID
         self.client_id = CLIENT_ID
         self.scopes = SCOPES
         self.refresh_token = os.getenv("REFRESH_TOKEN")
         self.access_token = os.getenv("ACCESS_TOKEN")
-        self.token_url = f"https://login.microsoftonline.com/{self.tenant_id}/oauth2/v2.0/token"
+        print(self.tenant_id, self.client_id)
+        self.token_url = (
+            f"https://login.microsoftonline.com/{self.tenant_id}/oauth2/v2.0/token"
+        )
 
         # Ensure credentials are valid
         if not self.tenant_id or not self.client_id:
@@ -37,7 +41,7 @@ class TokenManager:
             "grant_type": "refresh_token",
             "client_id": self.client_id,
             "refresh_token": self.refresh_token,
-            "scope": self.scopes
+            "scope": self.scopes,
         }
 
         # Make the POST request to refresh the token
@@ -47,12 +51,13 @@ class TokenManager:
             # Parse the response and extract tokens
             tokens = response.json()
             new_access_token = tokens["access_token"]
-            new_refresh_token = tokens.get("refresh_token", self.refresh_token)  # Use current if new not provided
+            new_refresh_token = tokens.get(
+                "refresh_token", self.refresh_token
+            )  # Use current if new not provided
             print("✅ Tokens refreshed successfully!")
             # Save the tokens to the .env file
             self.update_tokens_in_env(new_access_token, new_refresh_token)
 
-            
             # print("New Access Token:", new_access_token)
             # print("New Refresh Token:", new_refresh_token)
 

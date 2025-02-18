@@ -1,32 +1,39 @@
 import requests
+import time
+import os
+import logging
+from Authenticator.authenticator import UserAuthenticator
+# import email_parser
 
-def fetch_emails_by_page(access_token: str, user_id: str, email_url: str):
-    """
-    Fetches emails from a user's mailbox for the given page URL.
-    Yields the emails of the current page.
+logger = logging.getLogger()
+logger.setLevel("INFO")
 
-    Args:
-        access_token (str): The access token for authentication.
-        user_id (str): The email ID of the mailbox to query.
-        email_url (str): The Graph API URL for fetching emails (e.g., first page or next page).
+class EmailFetcher:
 
-    Yields:
-        list: A list of emails from the current page.
-    """
-    headers = {"Authorization": f"Bearer {access_token}"}
+	def __init__(self):
+		self.authenticator = UserAuthenticator.get_instance() # To Be Updated
+		self.next_link = None
+		
+	def fetch_emails(self):
+		
+		# Token time check? 
+		
+		access_token = self.authenticator.generate_token()
 
-    try:
-        response = requests.get(email_url, headers=headers)
-        if response.status_code == 200:
-            data = response.json()
-            emails = data.get("value", [])
-            yield emails  # Yield the emails from the current page
+		# Use stored graph link:
+		graph_url = self.next_link if self.next_link else "https://graph.microsoft.com/v1.0/me/messages"
 
-            # Get the next page URL
-            next_url = data.get("@odata.nextLink")
-            if next_url:
-                yield next_url  # Yield the next page URL
-        else:
-            print(f"Failed to fetch emails: {response.status_code}, {response.json()}")
-    except requests.exceptions.RequestException as e:
-        print(f"Error: {e}")
+		params = {
+			"$filter"="",
+			"$top":5,
+		}
+		headers = {
+			"Authorization": f"Bearer {access_token}",
+		}
+		try:
+			response = requests.get(graph_url, headers = headers, params = params)
+			data = response.json
+			self.next_link = data.get("@odata.nextLink")  # Store next page link
+			return 
+		except requests.RequestException as e:
+			logging.error(f"Failed to fetch emails: {str(e)}")
