@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 import os
 from Email_Fetcher.email_fetcher import fetch_emails
+from Email_Filter.filter import classify_emails
 
 # Load environment variables from .env file
 load_dotenv()
@@ -50,6 +51,29 @@ def generate_today_email_url() -> str:
     )
     return url
 
+import json
+
+def read_json_file(file_path):
+    """
+    Reads a JSON file and returns the data as a Python object.
+
+    Args:
+        file_path (str): The path to the JSON file.
+
+    Returns:
+        dict or list: The data loaded from the JSON file.
+    """
+    try:
+        with open(file_path, "r") as file:
+            data = json.load(file)
+            return data
+    except FileNotFoundError:
+        print(f"Error: The file '{file_path}' was not found.")
+    except json.JSONDecodeError:
+        print(f"Error: The file '{file_path}' is not a valid JSON file.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
 
 
 def main():
@@ -65,7 +89,13 @@ def main():
 
     # Fetch today's emails using the generated URL and access token
     try:
-        fetch_emails(email_url, ACCESS_TOKEN)
+        emails=fetch_emails(email_url, ACCESS_TOKEN)
+        print("Emails fetched succesfully !!!")
+        email_filters=read_json_file("app/Config/filter.json")
+        print("Email classification process started....")
+        grouped_emails=classify_emails(emails,email_filters)
+        print(grouped_emails[0:2])
+        print("Email Classification Done!!!")
     except Exception as e:
         print(f"Error fetching emails: {e}")
 
