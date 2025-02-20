@@ -90,12 +90,15 @@ def main():
     # Fetch today's emails using the generated URL and access token
     try:
         emails=fetch_emails(email_url, ACCESS_TOKEN)
+        print(len(emails))
         print("Emails fetched succesfully !!!")
         email_filters=read_json_file("app/Config/filter.json")
         print("Email classification process started....")
         grouped_emails=classify_emails(emails,email_filters)
-        print(grouped_emails[0:2])
-        print("Email Classification Done!!!")
+        # for email_ in grouped_emails:
+        #     print(email_)
+        #     print('-------------------------------------------------------------------------')
+        # print("Email Classification Done!!!")
     except Exception as e:
         print(f"Error fetching emails: {e}")
 

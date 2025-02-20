@@ -9,7 +9,7 @@ class UserAuthenticator:
     _instance = None
 
     @staticmethod
-    def get_instance() -> "UserAuthenticator":
+    def get_instance():
         """
         Retrieve the singleton instance of UserAuthenticator.
 
