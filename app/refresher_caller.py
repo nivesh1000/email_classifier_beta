@@ -1,4 +1,4 @@
-from Authenticator.authenticator import UserAuthenticator
+
 from Token_Refresher.token_refresher import TokenManager
 # Usage Example:
 
