@@ -91,9 +91,9 @@ def main():
     try:
         emails=fetch_emails(email_url, ACCESS_TOKEN)
         # print(len(emails))
-        print("Emails fetched succesfully !!!")
+        # print("Emails fetched succesfully !!!")
         email_filters=read_json_file("app/Config/filter.json")
-        print("Email classification process started....")
+        # print("Email classification process started....")
         grouped_emails=classify_emails(emails,email_filters)
         for email_ in grouped_emails:
             print(email_)
