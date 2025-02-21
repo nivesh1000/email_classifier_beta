@@ -1,5 +1,4 @@
-
-from Token_Refresher.token_refresher import TokenManager
+from token_refresher import TokenManager
 # Usage Example:
 
 if __name__ == "__main__":

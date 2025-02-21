@@ -1,12 +1,13 @@
 import os
+import json
 import requests
-from dotenv import load_dotenv, set_key
-from Config.config import TENANT_ID, CLIENT_ID, SCOPES
+from dotenv import load_dotenv
+from config import TENANT_ID, CLIENT_ID, SCOPES
 
 
 class TokenManager:
     """
-    A class for managing access and refresh tokens, including refreshing and updating them in the .env file.
+    A class for managing access and refresh tokens, including refreshing and updating them in a JSON file.
     """
     def __init__(self):
         # Load environment variables from .env
@@ -27,7 +28,7 @@ class TokenManager:
     def refresh_tokens(self):
         """
         Refreshes the access and refresh tokens using the current refresh token.
-        Updates the tokens in the .env file.
+        Updates the tokens in the JSON file.
         """
         if not self.refresh_token:
             raise ValueError("Missing REFRESH_TOKEN in the environment variables.")
@@ -49,35 +50,35 @@ class TokenManager:
             new_access_token = tokens["access_token"]
             new_refresh_token = tokens.get("refresh_token", self.refresh_token)  # Use current if new not provided
             print("✅ Tokens refreshed successfully!")
-            # Save the tokens to the .env file
-            self.update_tokens_in_env(new_access_token, new_refresh_token)
-
-            
-            # print("New Access Token:", new_access_token)
-            # print("New Refresh Token:", new_refresh_token)
+            # Save the tokens to the JSON file
+            self.update_tokens_in_json(new_access_token, new_refresh_token)
 
         else:
             # Handle error response
             print("❌ Failed to refresh tokens:", response.status_code, response.text)
             raise Exception("Token refresh failed.")
 
-    def update_tokens_in_env(self, access_token: str, refresh_token: str):
+    def update_tokens_in_json(self, access_token: str, refresh_token: str):
         """
-        Updates the access and refresh tokens in the .env file.
+        Updates the access and refresh tokens in a JSON file.
 
         Args:
             access_token (str): The new access token to save.
             refresh_token (str): The new refresh token to save.
         """
-        env_file = ".env"
+        json_file_path = "tokens.json"
 
-        # Load environment variables to ensure updates are written correctly
-        load_dotenv(env_file)
+        # Prepare the token data to save
+        token_data = {
+            "ACCESS_TOKEN": access_token,
+            "REFRESH_TOKEN": refresh_token
+        }
 
-        # Update or create the ACCESS_TOKEN entry
-        set_key(env_file, "ACCESS_TOKEN", access_token)
-
-        # Update or create the REFRESH_TOKEN entry
-        set_key(env_file, "REFRESH_TOKEN", refresh_token)
-
-        print("✅ Tokens updated in the .env file.")
+        # Save tokens to the JSON file
+        try:
+            with open(json_file_path, "w") as json_file:
+                json.dump(token_data, json_file, indent=4)
+            print(f"✅ Tokens updated in {json_file_path}.")
+        except Exception as e:
+            print(f"❌ Failed to update tokens in {json_file_path}: {e}")
+            raise

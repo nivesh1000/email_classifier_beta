@@ -1,8 +1,9 @@
 import os
-from dotenv import load_dotenv, set_key
+from dotenv import load_dotenv
 from msal import PublicClientApplication
-from Config.config import TENANT_ID, CLIENT_ID, SCOPES
+from config import TENANT_ID, CLIENT_ID, SCOPES
 from typing import Optional
+import json
 
 
 class UserAuthenticator:
@@ -74,32 +75,34 @@ class UserAuthenticator:
             self.access_token = token_response["access_token"]
             self.refresh_token = token_response.get("refresh_token")  # Get refresh token if available
 
-            # Save both access and refresh tokens to the .env file
-            self.save_tokens_to_env(self.access_token, self.refresh_token)
+            # Save both access and refresh tokens to the JSON file
+            self.save_tokens_to_json(self.access_token, self.refresh_token)
 
             return self.access_token
         except Exception as e:
             print(f"Authentication error: {e}")
             raise
 
-    def save_tokens_to_env(self, access_token: str, refresh_token: Optional[str]):
+    def save_tokens_to_json(self, access_token: str, refresh_token: Optional[str]):
         """
-        Save or update the access and refresh tokens in the .env file.
+        Save or update the access and refresh tokens in a JSON file.
 
         Args:
             access_token (str): The access token to save.
             refresh_token (Optional[str]): The refresh token to save (if available).
         """
-        env_file = ".env"
+        json_file = "tokens.json"
 
-        # Load environment variables to ensure updates are written correctly
-        load_dotenv(env_file)
+        # Create or update the JSON file
+        tokens_data = {
+            "ACCESS_TOKEN": access_token,
+        }
 
-        # Update or create the ACCESS_TOKEN entry
-        set_key(env_file, "ACCESS_TOKEN", access_token)
-
-        # Update or create the REFRESH_TOKEN entry if it exists
         if refresh_token:
-            set_key(env_file, "REFRESH_TOKEN", refresh_token)
+            tokens_data["REFRESH_TOKEN"] = refresh_token
 
-        print("Access and refresh tokens saved/updated in the .env file.")
+        # Write the tokens to the JSON file
+        with open(json_file, "w") as file:
+            json.dump(tokens_data, file, indent=4)
+
+        print("Access and refresh tokens saved/updated in the JSON file.")

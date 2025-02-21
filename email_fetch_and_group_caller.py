@@ -4,8 +4,8 @@ from typing import Optional
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 import os
-from Email_Fetcher.email_fetcher import fetch_emails
-from Email_Filter.filter import classify_emails
+from email_fetcher import fetch_emails
+from filter import classify_emails
 
 # Load environment variables from .env file
 load_dotenv()
@@ -91,7 +91,6 @@ def main():
     try:
         emails=fetch_emails(email_url, ACCESS_TOKEN)
         # print(len(emails))
-        print("Emails fetched succesfully !!!")
         email_filters=read_json_file("app/Config/filter.json")
         print("Email classification process started....")
         grouped_emails=classify_emails(emails,email_filters)
