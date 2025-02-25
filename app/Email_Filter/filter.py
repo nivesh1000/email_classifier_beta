@@ -7,12 +7,12 @@ def classify_emails(emails, groups_data):
         groups_data (Dict): JSON containing group information and keywords.
 
     Returns:
-        List[Dict]: List of emails with assigned groups.
+        List[Dict]: List of emails with assigned groups as group_id and keyword_id.
     """
     groups = groups_data["data"]["groups"]
 
     for email in emails:
-        email["group"] = ""  # Default group is empty
+        email["group"] = {"group_id": None, "keyword_id": None}  # Default is empty
         subject = email.get("subject", "").lower()
         body = email.get("body", "").lower()
 
@@ -21,20 +21,20 @@ def classify_emails(emails, groups_data):
             for keyword_data in group.get("keywords", []):
                 keyword = keyword_data["keyword"].lower()
                 if keyword in subject:
-                    email["group"] = group["name"]
+                    email["group"] = {"group_id": group["id"], "keyword_id": keyword_data["id"]}
                     break
-            if email["group"]:  # If group is already assigned, stop checking
+            if email["group"]["group_id"] is not None:  # If group is assigned, stop checking
                 break
 
         # If no group is assigned, check keywords in body
-        if not email["group"]:
+        if email["group"]["group_id"] is None:
             for group in groups:
                 for keyword_data in group.get("keywords", []):
                     keyword = keyword_data["keyword"].lower()
                     if keyword in body:
-                        email["group"] = group["name"]
+                        email["group"] = {"group_id": group["id"], "keyword_id": keyword_data["id"]}
                         break
-                if email["group"]:  # If group is already assigned, stop checking
+                if email["group"]["group_id"] is not None:  # If group is assigned, stop checking
                     break
 
     return emails

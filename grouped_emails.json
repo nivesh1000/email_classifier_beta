@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEJAAAh1pkWyVTVQ6n1J3WQcgRhAAAC_HWWAAA=",
+            "to": "nivesh.kumar@cynoteck.com",
+            "from": "jsjd@cynoteck.com",
+            "subject": "test 25 feb",
+            "body": "body)_",
+            "recieved_time": "2025-02-25T05:05:13Z",
+            "group": {
+                "group_id": 4,
+                "keyword_id": 29
+            }
+        }
+    ]
+}
