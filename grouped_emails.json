@@ -8,8 +8,8 @@
             "body": "body)_",
             "recieved_time": "2025-02-25T05:05:13Z",
             "group": {
-                "group_id": 4,
-                "keyword_id": 29
+                "group_id": null,
+                "keyword_id": null
             }
         }
     ]

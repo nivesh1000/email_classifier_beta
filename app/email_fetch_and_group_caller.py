@@ -6,6 +6,7 @@ import json
 from dotenv import load_dotenv
 from Email_Fetcher.email_fetcher import fetch_emails
 from Email_Filter.filter import classify_emails
+from api.get_filters import fetch_groups
 
 # Load environment variables from .env file
 load_dotenv()
@@ -108,7 +109,8 @@ def main():
 
     try:
         emails = fetch_emails(email_url, ACCESS_TOKEN)
-        email_filters = read_json_file("app/Config/filter.json")
+
+        email_filters = fetch_groups()
         if email_filters is None:
             logger.error("Failed to load email filters. Exiting...")
             return
