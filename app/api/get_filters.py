@@ -9,7 +9,7 @@ def fetch_groups():
         response.raise_for_status()  # Raises an error for non-200 responses
         data = response.json()  # Parse JSON response
         
-        print(json.dumps(data, indent=4))  # Pretty print JSON data
+        # print(json.dumps(data, indent=4))  # Pretty print JSON data
         return data
 
     except requests.exceptions.RequestException as e:

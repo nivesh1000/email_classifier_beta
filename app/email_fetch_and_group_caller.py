@@ -39,7 +39,7 @@ def generate_all_email_url() -> str:
     """
     try:
         url = (
-            "https://graph.microsoft.com/v1.0/me/messages?"
+            "https://graph.microsoft.com/v1.0/me/messages?$top=5&"
             "$orderby=receivedDateTime"
         )
         return url
@@ -102,7 +102,7 @@ def main():
         logger.error("ACCESS_TOKEN not found. Please ensure it's set in your .env file.")
         return
 
-    email_url = generate_today_email_url()
+    email_url = generate_all_email_url()
     if not email_url:
         logger.error("Failed to generate email URL. Exiting...")
         return
@@ -115,20 +115,20 @@ def main():
             logger.error("Failed to load email filters. Exiting...")
             return
 
-        grouped_emails = classify_emails(emails, email_filters)
+        # grouped_emails = classify_emails(emails, email_filters)
 
-        try:
-            with open("grouped_emails.json", "w", encoding="utf-8") as f:
-                json.dump({"data": grouped_emails}, f, indent=4, ensure_ascii=False)
-        except Exception as e:
-            logger.error(f"Error saving grouped emails to file: {e}")
-            return
+        # try:
+        #     with open("grouped_emails.json", "w", encoding="utf-8") as f:
+        #         json.dump({"data": grouped_emails}, f, indent=4, ensure_ascii=False)
+        # except Exception as e:
+        #     logger.error(f"Error saving grouped emails to file: {e}")
+        #     return
 
-        for email_ in grouped_emails:
-            print(email_)
-            print('-' * 73)
+        # for email_ in grouped_emails:
+        #     print(email_)
+        #     print('-' * 73)
 
-        logger.info("Email Classification Done!!!")
+        # logger.info("Email Classification Done!!!")
     
     except Exception as e:
         logger.error(f"Error processing emails: {e}")

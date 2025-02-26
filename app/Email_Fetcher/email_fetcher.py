@@ -2,6 +2,7 @@ import logging
 import requests
 from bs4 import BeautifulSoup
 from typing import List, Dict
+import sys
 
 # Use the existing logger
 logger = logging.getLogger("EmailProcessor")
@@ -38,7 +39,7 @@ def fetch_emails(email_url: str, access_token: str) -> List[Dict]:
                 
                 # Process the current batch of emails
                 for email in emails:
-                    logger.info(f"Processing email: {email}")
+                    # logger.info(f"Processing email: {email}")
                     # Extract required fields
                     email_id = email.get("id", "Unknown ID")
                     from_address = email.get("from", {}).get("emailAddress", {}).get("address", "N/A")
@@ -65,7 +66,7 @@ def fetch_emails(email_url: str, access_token: str) -> List[Dict]:
                             "keyword_id": ""  # Placeholder for now
                         }
                     })
-
+                
                 # Check if there's a next page
                 next_url = data.get("@odata.nextLink", None)
 
@@ -75,5 +76,7 @@ def fetch_emails(email_url: str, access_token: str) -> List[Dict]:
 
     except Exception as e:
         logger.error(f"An error occurred: {str(e)}")
+
+    print("size of emails:   ", sys.getsizeof(email_list[0:50]))
 
     return email_list
