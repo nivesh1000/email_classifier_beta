@@ -1,7 +1,7 @@
 import os
 import json
 import requests
-from dotenv import load_dotenv
+import boto3
 from config import TENANT_ID, CLIENT_ID, SCOPES
 
 
@@ -10,26 +10,25 @@ class TokenManager:
     A class for managing access and refresh tokens, including refreshing and updating them in a JSON file.
     """
     def __init__(self):
-        # Load environment variables from .env
-        load_dotenv()
         
         # Read credentials from the config module
         self.tenant_id = TENANT_ID
         self.client_id = CLIENT_ID
+        # self.refresh_token = REFRESH_TOKEN
         self.scopes = SCOPES
-        self.refresh_token = os.getenv("REFRESH_TOKEN")
-        self.access_token = os.getenv("ACCESS_TOKEN")
         self.token_url = f"https://login.microsoftonline.com/{self.tenant_id}/oauth2/v2.0/token"
 
         # Ensure credentials are valid
         if not self.tenant_id or not self.client_id:
             raise ValueError("Missing required credentials in the configuration.")
 
-    def refresh_tokens(self):
+    def refreshing_token(self,tokens):
         """
         Refreshes the access and refresh tokens using the current refresh token.
         Updates the tokens in the JSON file.
         """
+        self.refresh_token = tokens["REFRESH_TOKEN"]
+
         if not self.refresh_token:
             raise ValueError("Missing REFRESH_TOKEN in the environment variables.")
 
@@ -46,39 +45,42 @@ class TokenManager:
 
         if response.status_code == 200:
             # Parse the response and extract tokens
-            tokens = response.json()
-            new_access_token = tokens["access_token"]
-            new_refresh_token = tokens.get("refresh_token", self.refresh_token)  # Use current if new not provided
+            updated_tokens = response.json()
+            new_access_token = updated_tokens["access_token"]
+            new_refresh_token = updated_tokens.get("refresh_token", self.refresh_token)  # Use current if new not provided
             print("✅ Tokens refreshed successfully!")
             # Save the tokens to the JSON file
-            self.update_tokens_in_json(new_access_token, new_refresh_token)
+            self.update_ssm_parameters(new_access_token, new_refresh_token)
 
         else:
             # Handle error response
             print("❌ Failed to refresh tokens:", response.status_code, response.text)
             raise Exception("Token refresh failed.")
 
-    def update_tokens_in_json(self, access_token: str, refresh_token: str):
-        """
-        Updates the access and refresh tokens in a JSON file.
 
-        Args:
-            access_token (str): The new access token to save.
-            refresh_token (str): The new refresh token to save.
-        """
-        json_file_path = "tokens.json"
+    def update_ssm_parameters(self, access_token, refresh_token):
+        """Update ACCESS_TOKEN and REFRESH_TOKEN in AWS SSM Parameter Store as String"""
+        ssm = boto3.client("ssm", region_name=os.getenv("AWS_REGION", "us-east-1"))
 
-        # Prepare the token data to save
-        token_data = {
-            "ACCESS_TOKEN": access_token,
-            "REFRESH_TOKEN": refresh_token
-        }
-
-        # Save tokens to the JSON file
         try:
-            with open(json_file_path, "w") as json_file:
-                json.dump(token_data, json_file, indent=4)
-            print(f"✅ Tokens updated in {json_file_path}.")
+            # Update ACCESS_TOKEN as String
+            ssm.put_parameter(
+                Name="ACCESS_TOKEN",
+                Value=access_token,
+                Type="String",  # Now using "String" instead of "SecureString"
+                Overwrite=True  # Allow updates
+            )
+
+            # Update REFRESH_TOKEN as String
+            ssm.put_parameter(
+                Name="REFRESH_TOKEN",
+                Value=refresh_token,
+                Type="String",
+                Overwrite=True
+            )
+
+            return {"message": "Parameters updated successfully"}
+
         except Exception as e:
-            print(f"❌ Failed to update tokens in {json_file_path}: {e}")
-            raise
+            print(f"Error updating SSM parameters: {e}")
+            return {"error": str(e)}
