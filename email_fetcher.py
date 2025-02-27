@@ -5,11 +5,13 @@ import requests
 from bs4 import BeautifulSoup
 from typing import List, Dict
 from filter import classify_emails
+import aiohttp
+import asyncio
 
 # Configure logger
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
- 
+
 
 def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
     """
@@ -30,7 +32,7 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
     email_list = []  # To store email data
     classified_emails = []  # To store classified emails
 
-    POST_API_URL = os.environ["POST_API_URL"]
+    POST_API_URL = ""
     try:
         while next_url:  # Keep iterating until there are no more pages
             response = requests.get(next_url, headers=headers)
@@ -42,52 +44,72 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
                 if not emails:
                     logger.info("No emails found.")
                     return email_list
-                
+
                 # Process the current batch of emails
                 for email in emails:
                     # logger.info(f"Processing email: {email}")
                     # Extract required fields
                     email_id = email.get("id", "Unknown ID")
-                    from_address = email.get("from", {}).get("emailAddress", {}).get("address", "N/A")
+                    from_address = (
+                        email.get("from", {})
+                        .get("emailAddress", {})
+                        .get("address", "N/A")
+                    )
                     to_recipients = email.get("toRecipients", [])
                     to_address = (
                         to_recipients[0].get("emailAddress", {}).get("address", "N/A")
-                        if to_recipients else "N/A"
+                        if to_recipients
+                        else "N/A"
                     )
                     subject = email.get("subject", "No subject")
                     raw_body = email.get("body", {}).get("content", "No body available")
-                    clean_body = BeautifulSoup(raw_body, "html.parser").get_text().strip()
+                    clean_body = (
+                        BeautifulSoup(raw_body, "html.parser").get_text().strip()
+                    )
                     received_time = email.get("receivedDateTime", "Unknown Timestamp")
 
                     # Append the email dictionary to the list
-                    email_list.append({
-                        "email_id": email_id,
-                        "to": to_address,
-                        "from": from_address,
-                        "subject": subject,
-                        "body": clean_body,
-                        "recieved_time": received_time,  # Added timestamp
-                        "group": []
-                    })
+                    email_list.append(
+                        {
+                            "email_id": email_id,
+                            "to": to_address,
+                            "from": from_address,
+                            "subject": subject,
+                            "body": clean_body,
+                            "recieved_time": received_time,  # Added timestamp
+                            "group": [],
+                        }
+                    )
                 classified_emails = classify_emails(email_list, filters)
-                classified_emails = {"data":classified_emails}
+                classified_emails = {"data": classified_emails}
                 # Send classified emails via POST request
                 if classified_emails:
                     try:
                         post_headers = {"Content-Type": "application/json"}
-                        logger.info(f"Sending {len(classified_emails)} classified emails to API...")
-                        
-                        post_response = requests.post(POST_API_URL, json=classified_emails, headers=post_headers)
+                        logger.info(
+                            f"Sending {len(classified_emails)} classified emails to API..."
+                        )
+
+                        post_response = requests.post(
+                            POST_API_URL, json=classified_emails, headers=post_headers
+                        )
                         post_response.raise_for_status()
 
                         response_json = post_response.json()
-                        
-                        if post_response.status_code == 201 and response_json.get("status") == "success":
-                            logger.info(f"Successfully sent emails. API Response: {post_response.status_code} - {post_response.text}")
+
+                        if (
+                            post_response.status_code == 201
+                            and response_json.get("status") == "success"
+                        ):
+                            logger.info(
+                                f"Successfully sent emails. API Response: {post_response.status_code} - {post_response.text}"
+                            )
                             # Only update next_url if the response matches expected success criteria
                             next_url = data.get("@odata.nextLink", None)
                         else:
-                            logger.warning(f"Unexpected API response: {post_response.status_code} - {post_response.text}")
+                            logger.warning(
+                                f"Unexpected API response: {post_response.status_code} - {post_response.text}"
+                            )
                             time.sleep(2)  # Delay before retrying or proceeding further
 
                     except requests.RequestException as e:

@@ -3,8 +3,13 @@ import json
 import os
 import logging
 
+# Configure logger
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+
 def fetch_groups():
-    url = os.getenv('GET_FILTER_API')
+    url = os.getenv("GET_FILTER_API")
     # Configure logger
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
