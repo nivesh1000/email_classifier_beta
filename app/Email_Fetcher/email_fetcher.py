@@ -39,8 +39,6 @@ def fetch_emails(email_url: str, access_token: str) -> List[Dict]:
                 
                 # Process the current batch of emails
                 for email in emails:
-                    # logger.info(f"Processing email: {email}")
-                    # Extract required fields
                     email_id = email.get("id", "Unknown ID")
                     from_address = email.get("from", {}).get("emailAddress", {}).get("address", "N/A")
                     to_recipients = email.get("toRecipients", [])
@@ -60,11 +58,8 @@ def fetch_emails(email_url: str, access_token: str) -> List[Dict]:
                         "from": from_address,
                         "subject": subject,
                         "body": clean_body,
-                        "recieved_time": received_time,  # Added timestamp
-                        "group": {
-                            "group_id": "",  # Placeholder for now
-                            "keyword_id": ""  # Placeholder for now
-                        }
+                        "recieved_time": received_time,
+                        "group": []  # Changed to list
                     })
                 
                 # Check if there's a next page
@@ -76,7 +71,5 @@ def fetch_emails(email_url: str, access_token: str) -> List[Dict]:
 
     except Exception as e:
         logger.error(f"An error occurred: {str(e)}")
-
-    print("size of emails:   ", sys.getsizeof(email_list[0:50]))
 
     return email_list

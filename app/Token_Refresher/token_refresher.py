@@ -10,7 +10,7 @@ class TokenManager:
     A class for managing access and refresh tokens, including refreshing and updating them in the .env file.
     """
     def __init__(self):
-        load_dotenv()
+        load_dotenv(override=True)  # Reload environment variables to ensure the latest values are used
         self.tenant_id = TENANT_ID
         self.client_id = CLIENT_ID
         self.scopes = SCOPES
@@ -37,24 +37,26 @@ class TokenManager:
             "refresh_token": self.refresh_token,
             "scope": self.scopes
         }
+        headers = {"Content-Type": "application/x-www-form-urlencoded"}
 
         try:
-            response = requests.post(self.token_url, data=payload)
+            response = requests.post(self.token_url, data=payload, headers=headers)
             response.raise_for_status()
             tokens = response.json()
+
             new_access_token = tokens.get("access_token")
             new_refresh_token = tokens.get("refresh_token", self.refresh_token)
-            
+
             if new_access_token:
                 logger.info("✅ Tokens refreshed successfully!")
                 self.update_tokens_in_env(new_access_token, new_refresh_token)
             else:
-                logger.error("Received an empty access token.")
+                logger.error("❌ Received an empty access token.")
                 raise Exception("Token refresh failed: Empty access token.")
 
         except requests.exceptions.RequestException as e:
             logger.error(f"❌ Failed to refresh tokens: {e}")
-            raise Exception("Token refresh failed.")
+            raise Exception(f"Token refresh failed: {str(e)}")
 
     def update_tokens_in_env(self, access_token: str, refresh_token: str):
         """
@@ -65,7 +67,14 @@ class TokenManager:
             refresh_token (str): The new refresh token to save.
         """
         env_file = ".env"
-        load_dotenv(env_file)
         set_key(env_file, "ACCESS_TOKEN", access_token)
         set_key(env_file, "REFRESH_TOKEN", refresh_token)
-        logger.info("✅ Tokens updated in the .env file.")
+
+        # Reload environment variables with new values
+        load_dotenv(override=True)
+
+        # Update in-memory variables
+        self.access_token = access_token
+        self.refresh_token = refresh_token
+
+        logger.info("✅ Tokens updated in the .env file and memory.")

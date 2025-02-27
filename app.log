@@ -1,0 +1,87 @@
+2025-02-26 10:10:29,748 - INFO - This is an info message.
+2025-02-26 10:10:29,749 - ERROR - This is an error message.
+2025-02-26 10:10:33,062 - INFO - ✅ Tokens refreshed successfully!
+2025-02-26 10:10:33,072 - INFO - ✅ Tokens updated in the .env file.
+2025-02-26 11:07:48,401 - INFO - Email Classification Done!!!
+2025-02-26 11:31:43,646 - INFO - No emails found.
+2025-02-26 11:31:47,440 - INFO - Email Classification Done!!!
+2025-02-26 12:24:33,791 - INFO - This is an info message.
+2025-02-26 12:24:33,791 - ERROR - This is an error message.
+2025-02-26 12:24:38,027 - ERROR - ❌ Failed to refresh tokens: 400 Client Error: Bad Request for url: https://login.microsoftonline.com/ecefbb66-e571-4a04-ad37-82492edec860/oauth2/v2.0/token
+2025-02-26 12:28:34,383 - INFO - This is an info message.
+2025-02-26 12:28:34,383 - ERROR - This is an error message.
+2025-02-26 12:28:39,564 - ERROR - ❌ Failed to refresh tokens: 400 Client Error: Bad Request for url: https://login.microsoftonline.com/ecefbb66-e571-4a04-ad37-82492edec860/oauth2/v2.0/token
+2025-02-26 12:36:59,269 - INFO - This is an info message.
+2025-02-26 12:36:59,270 - ERROR - This is an error message.
+2025-02-26 12:37:03,440 - ERROR - ❌ Failed to refresh tokens: 400 Client Error: Bad Request for url: https://login.microsoftonline.com/ecefbb66-e571-4a04-ad37-82492edec860/oauth2/v2.0/token
+2025-02-26 13:11:12,399 - ERROR - Failed to fetch emails: {'error': {'code': 'InvalidAuthenticationToken', 'message': 'Lifetime validation failed, the token is expired.', 'innerError': {'date': '2025-02-26T07:41:12', 'request-id': '9a19650e-641d-4005-b04b-431c7ca0f864', 'client-request-id': '9a19650e-641d-4005-b04b-431c7ca0f864'}}}
+2025-02-26 13:11:19,497 - INFO - Email Classification Done!!!
+2025-02-26 13:17:49,790 - INFO - This is an info message.
+2025-02-26 13:17:49,790 - ERROR - This is an error message.
+2025-02-26 13:17:54,186 - ERROR - ❌ Failed to refresh tokens: 400 Client Error: Bad Request for url: https://login.microsoftonline.com/ecefbb66-e571-4a04-ad37-82492edec860/oauth2/v2.0/token
+2025-02-26 13:18:08,286 - ERROR - Failed to fetch emails: {'error': {'code': 'InvalidAuthenticationToken', 'message': 'Lifetime validation failed, the token is expired.', 'innerError': {'date': '2025-02-26T07:48:08', 'request-id': '05994675-10f8-4ad7-8edd-ae998e3f6bc9', 'client-request-id': '05994675-10f8-4ad7-8edd-ae998e3f6bc9'}}}
+2025-02-26 13:18:12,824 - INFO - Email Classification Done!!!
+2025-02-26 13:21:05,515 - ERROR - Failed to fetch emails: {'error': {'code': 'InvalidAuthenticationToken', 'message': 'Lifetime validation failed, the token is expired.', 'innerError': {'date': '2025-02-26T07:51:05', 'request-id': '2463ebd0-5f56-4614-9978-e791d08142e4', 'client-request-id': '2463ebd0-5f56-4614-9978-e791d08142e4'}}}
+2025-02-26 13:21:09,874 - INFO - Email Classification Done!!!
+2025-02-26 13:21:35,368 - ERROR - Failed to fetch emails: {'error': {'code': 'InvalidAuthenticationToken', 'message': 'Lifetime validation failed, the token is expired.', 'innerError': {'date': '2025-02-26T07:51:35', 'request-id': 'dc19fcf7-78ef-46d1-8663-291b63746886', 'client-request-id': 'dc19fcf7-78ef-46d1-8663-291b63746886'}}}
+2025-02-26 13:21:47,378 - INFO - Email Classification Done!!!
+2025-02-26 13:23:18,449 - INFO - Email Classification Done!!!
+2025-02-26 13:24:36,181 - INFO - This is an info message.
+2025-02-26 13:24:36,182 - ERROR - This is an error message.
+2025-02-26 13:24:39,945 - ERROR - ❌ Failed to refresh tokens: 400 Client Error: Bad Request for url: https://login.microsoftonline.com/ecefbb66-e571-4a04-ad37-82492edec860/oauth2/v2.0/token
+2025-02-26 13:25:19,719 - INFO - Email Classification Done!!!
+2025-02-26 13:28:06,197 - INFO - Email Classification Done!!!
+2025-02-26 13:28:59,390 - INFO - Email Classification Done!!!
+2025-02-26 13:29:09,472 - INFO - Email Classification Done!!!
+2025-02-26 14:12:53,959 - INFO - Email Classification Done!!!
+2025-02-26 14:13:07,484 - INFO - This is an info message.
+2025-02-26 14:13:07,484 - ERROR - This is an error message.
+2025-02-26 14:13:10,923 - ERROR - ❌ Failed to refresh tokens: 400 Client Error: Bad Request for url: https://login.microsoftonline.com/ecefbb66-e571-4a04-ad37-82492edec860/oauth2/v2.0/token
+2025-02-26 14:25:48,450 - INFO - This is an info message.
+2025-02-26 14:25:48,450 - ERROR - This is an error message.
+2025-02-26 14:25:52,665 - ERROR - ❌ Failed to refresh tokens: 400 Client Error: Bad Request for url: https://login.microsoftonline.com/ecefbb66-e571-4a04-ad37-82492edec860/oauth2/v2.0/token
+2025-02-26 14:27:12,716 - INFO - This is an info message.
+2025-02-26 14:27:12,716 - ERROR - This is an error message.
+2025-02-26 14:27:16,073 - ERROR - ❌ Failed to refresh tokens: 400 Client Error: Bad Request for url: https://login.microsoftonline.com/ecefbb66-e571-4a04-ad37-82492edec860/oauth2/v2.0/token
+2025-02-26 14:33:30,383 - INFO - This is an info message.
+2025-02-26 14:33:30,383 - ERROR - This is an error message.
+2025-02-26 14:33:40,736 - ERROR - ❌ Failed to refresh tokens: 400 Client Error: Bad Request for url: https://login.microsoftonline.com/ecefbb66-e571-4a04-ad37-82492edec860/oauth2/v2.0/token
+2025-02-26 14:36:29,413 - INFO - Email Classification Done!!!
+2025-02-26 14:36:46,259 - INFO - This is an info message.
+2025-02-26 14:36:46,259 - ERROR - This is an error message.
+2025-02-26 14:36:51,213 - INFO - ✅ Tokens refreshed successfully!
+2025-02-26 14:36:51,219 - INFO - ✅ Tokens updated in the .env file and memory.
+2025-02-26 14:36:58,317 - INFO - This is an info message.
+2025-02-26 14:36:58,317 - ERROR - This is an error message.
+2025-02-26 14:36:59,383 - INFO - ✅ Tokens refreshed successfully!
+2025-02-26 14:36:59,389 - INFO - ✅ Tokens updated in the .env file and memory.
+2025-02-26 14:41:35,613 - INFO - This is an info message.
+2025-02-26 14:41:35,613 - ERROR - This is an error message.
+2025-02-26 14:41:40,558 - INFO - ✅ Tokens refreshed successfully!
+2025-02-26 14:41:40,564 - INFO - ✅ Tokens updated in the .env file and memory.
+2025-02-26 14:42:02,884 - INFO - Email Classification Done!!!
+2025-02-26 15:22:16,964 - INFO - Email Classification Done!!!
+2025-02-26 15:23:36,140 - INFO - Email Classification Done!!!
+2025-02-26 15:27:15,502 - ERROR - An error occurred: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2025-02-26 15:27:20,660 - INFO - Email Classification Done!!!
+2025-02-26 16:10:17,189 - INFO - This is an info message.
+2025-02-26 16:10:17,189 - ERROR - This is an error message.
+2025-02-26 16:10:23,785 - INFO - ✅ Tokens refreshed successfully!
+2025-02-26 16:10:23,794 - INFO - ✅ Tokens updated in the .env file and memory.
+2025-02-26 16:23:10,973 - ERROR - Failed to fetch emails: {'error': {'code': 'InvalidAuthenticationToken', 'message': 'Lifetime validation failed, the token is expired.', 'innerError': {'date': '2025-02-26T10:53:11', 'request-id': '27b5f91f-bbb7-48dc-8f56-c3181045843b', 'client-request-id': '27b5f91f-bbb7-48dc-8f56-c3181045843b'}}}
+2025-02-26 16:23:22,724 - INFO - Email Classification Done!!!
+2025-02-27 09:44:44,521 - INFO - This is an info message.
+2025-02-27 09:44:44,521 - ERROR - This is an error message.
+2025-02-27 09:44:53,322 - INFO - ✅ Tokens refreshed successfully!
+2025-02-27 09:44:53,331 - INFO - ✅ Tokens updated in the .env file and memory.
+2025-02-27 09:46:32,668 - INFO - Email Classification Done!!!
+2025-02-27 12:29:41,066 - ERROR - Failed to fetch emails: {'error': {'code': 'InvalidAuthenticationToken', 'message': 'Lifetime validation failed, the token is expired.', 'innerError': {'date': '2025-02-27T06:59:41', 'request-id': 'b0742fcb-d21c-4e71-b47a-806dbfb5e37a', 'client-request-id': 'b0742fcb-d21c-4e71-b47a-806dbfb5e37a'}}}
+2025-02-27 12:29:44,902 - INFO - Email Classification Done!!!
+2025-02-27 12:44:13,959 - ERROR - Failed to fetch emails: {'error': {'code': 'InvalidAuthenticationToken', 'message': 'Lifetime validation failed, the token is expired.', 'innerError': {'date': '2025-02-27T07:14:13', 'request-id': '98f16755-08ed-456c-823f-e7abc7b7a3c4', 'client-request-id': '98f16755-08ed-456c-823f-e7abc7b7a3c4'}}}
+2025-02-27 12:44:17,604 - INFO - Email Classification Done!!!
+2025-02-27 12:45:06,816 - INFO - This is an info message.
+2025-02-27 12:45:06,816 - ERROR - This is an error message.
+2025-02-27 12:45:10,408 - INFO - ✅ Tokens refreshed successfully!
+2025-02-27 12:45:10,417 - INFO - ✅ Tokens updated in the .env file and memory.
+2025-02-27 12:45:36,149 - INFO - Email Classification Done!!!
+2025-02-27 13:20:08,155 - INFO - Email Classification Done!!!

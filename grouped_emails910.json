@@ -1,0 +1,664 @@
+{
+    "data": [
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEJAAAh1pkWyVTVQ6n1J3WQcgRhAAAACXBOAAA=",
+            "to": "nivesh.kumar@cynoteck.com",
+            "from": "jsjd@cynoteck.com",
+            "subject": "test1",
+            "body": "no-reply",
+            "recieved_time": "2025-02-19T07:25:31Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAACMNbAAA=",
+            "to": "jsjd@cynoteck.com",
+            "from": "harshit.lohani@cynoteck.com",
+            "subject": "test",
+            "body": "This is a test email.",
+            "recieved_time": "2025-02-19T07:31:38Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEJAAAh1pkWyVTVQ6n1J3WQcgRhAAAACXBPAAA=",
+            "to": "harshit.lohani@cynoteck.com",
+            "from": "jsjd@cynoteck.com",
+            "subject": "test1",
+            "body": "body1",
+            "recieved_time": "2025-02-19T07:38:07Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAACMNcAAA=",
+            "to": "jsjd@cynoteck.com",
+            "from": "harshit.lohani@cynoteck.com",
+            "subject": "Re: test1",
+            "body": "Body 2From: automated reply <jsjd@cynoteck.com>Sent: 19 February 2025 13:08To: Harshit Lohani <harshit.lohani@cynoteck.com>Subject: test1  body1",
+            "recieved_time": "2025-02-19T07:39:02Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAACMNdAAA=",
+            "to": "jsjd@cynoteck.com",
+            "from": "nivesh.kumar@cynoteck.com",
+            "subject": "1111",
+            "body": "2222",
+            "recieved_time": "2025-02-19T07:40:38Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhHAAA=",
+            "to": "editor@arpnewsletters.com",
+            "from": "mjones.association.revenue@gmail.com",
+            "subject": "test",
+            "body": "[EXTERNAL MAIL]test [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T15:51:59Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhIAAA=",
+            "to": "editor@arpnewsletters.com",
+            "from": "mjones@associationrevenuepartners.com",
+            "subject": "Test",
+            "body": "[EXTERNAL MAIL]Please let me know if this goes to spam. It should go to the Inbox. If Spam, we’ll need to work directly from the editor@ inbox so we don’t risk deliverability. Mike[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:18:14Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhJAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Albert.Gagne@swfwmd.state.fl.us",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Thank you for your e-mail. I will be out of the office February 19th and 20th.  For urgent permitting questions, please call the District main line at 1-800-423-1476 (FL Only) or 352-796-7211, and they will get you to the right person.Otherwise, I will get back to you as soon as possible upon my return to the office. [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:13Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhKAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "aarce@sfwmd.gov",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I will be out of office starting 2/14/25 and returning 2/24/25. If immediate assistance is needed please contact: Yanet  Yndart - Planner/Scheduler EXT-7012 Thank You  [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:16Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhLAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Brandon.Davidson@colliercountyfl.gov",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]\r\n\r\nI will be out of the office until 2/25/25\r\nIf you need assistance contact Thomas.Quigley@colliercountyfl.gov\r\nor DL-Meters-Ops@colliercountyfl.gov\r\n\r\n\r\n\r\n\r\nBrandon Davidson\r\nChief Operator\r\nUtilities Finance Operations\r\n\r\nOffice:239-252-6244\r\n\r\n\r\n4225 Mercantile Avenue\r\nNaples, FL 34104\r\nBrandon.Davidson@colliercountyfl.gov\n[cid:CountyLogo-FullColor_948165c4-9665-41b4-9162-fbb16abff557.png]\n[cid:Facebook_0522f546-5e75-4698-95f9-f15590a3defe.png] [cid:Instagram_a8da4774-4b5b-4ad1-8d23-20e69b3b605d.png]    [cid:X-Twitter_8d678efc-bd14-44ce-97cf-7fbab1003b00.png]     [cid:Youtube_0078f7f1-7789-4afd-a015-50689fe1f99b.png]    [cid:311IconforSignature_87c558eb-83f5-449b-87c1-3cc5ac8b0859.png] \r\n\r\n\r\n\r\n\r\n________________________________\r\n\r\nUnder Florida Law, e-mail addresses are public records. If you do not want your e-mail address released in response to a public records request, do not send electronic mail to this entity. Instead, contact this office by telephone or in writing.\r\n[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:19Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhMAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "depperson@kpud.org",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ I'll be out of the office until Monday March 3rd and will be returning messages as soon as possible when I return.  If you need immediate assistance, please call (360) 779-7656 and customer service will connect you with the appropriate person. Thank you,  David EppersonOperations DirectorKitsap PUD[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:21Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhNAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "n.vetter@kurita-water.com",
+            "subject": "Automatic reply: [EXT]The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Hello,    I am out of the office on PTO. I will answer emails as time allows. If your matter is urgent and requires attention, please contact the following individuals: PurchasingThomás Carbonari t.carbonari@kurita-water.com  MN ManufacturingBryan Stemmerb.stemmer@kurita-water.com TX Manufacturing Anthony Norrisa.norris@kurita-water.com Regards, NateThis e-mail message and all attachments transmitted with it contain confidential and proprietary business information owned by Kurita America Inc. and intended solely for the use of the addressee. The transmission of this e-mail may be legally privileged. If the recipient of this message is not the intended person or entity, you are hereby notified that any reading, dissemination, distribution, copying, or other use of this message, its contents, hyperlinks, and attached files of any kind is strictly prohibited. If you have received this message in error, please notify the sender immediately by a reply to this electronic mail message and delete this message and all copies and backups thereof. All rights to the information contained in this e-mail are reserved by Kurita America Inc. [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:23Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhOAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "ANDRIANA.PAPANDREOU@sydneywater.com.au",
+            "subject": "Automatic reply: [External] The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Thank you for your email.I am currently out of the office on sick leave and will be returning Monday 10 March 2025. If you have any queries that require urgent attention, please email environmentalregulation@sydneywater.com.au  Otherwise I will deal with your query on my return. Thank you in advance for your time. Kind regards, Andriana PapandreouSenior Environmental Regulatory SpecialistGovernance and AssuranceSydney Water, Level 15, 1 Smith Street, Parramatta NSW 2150 Mobile 0436 100 642andriana.papandreou@sydneywater.com.au environmentalregulator@sydneywater.com.au                 NOTICE: This email is confidential. If you are not the nominated recipient, please immediately delete this email, destroy all copies and inform the sender. Sydney Water Corporation (Sydney Water) prohibits the unauthorised copying or distribution of this email. This email does not necessarily express the views of Sydney Water. Sydney Water does not warrant nor guarantee that this email communication is free from errors, virus, interception or interference.[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:25Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhPAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Cindy.Marshall@denverwater.org",
+            "subject": "Automatic reply: [EXTERNAL]:  The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I will be out of the office Monday, February 24th and will respond to your email when I return. Please contact myron.nealey@denverwater.org if you need immediate assistance. Thank you! [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:25Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhQAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "coty.mcdaniel@ccwa.us",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ ﻿ ﻿ ﻿ ﻿ I am currently out of the office and plan to return on Thursday , February, 20th. I will be checking my emails periodically and will respond as soon as possible.    Thanks,  Coty McDaniel Clayton County Water Authority Water Production Director[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:27Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhRAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Casey.Clark@denverwater.org",
+            "subject": "Automatic reply: [EXTERNAL]:  The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ I will be out of the office until Monday February 24, 2025. If you need immediate assistance, please contact Jeremy Ross (Jeremy.Ross@denverwater.org) Otherwise, I will return your message as soon as possible. - Casey Clark [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:31Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhSAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "hweber@tohowater.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Hello, I am out of office. For immediate assistance, please contact CLeandro@tohowater.com [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:32Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhTAAA=",
+            "to": "editor@arpnewsletters.com",
+            "from": "cwomack@associationrevenuepartners.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ ﻿Thank you for reaching out!  I am out of the office today, February 19th, but I will respond to your inquires as soon as possible when I return tomorrow. Christina WomackDirector of Partner Operations Association Revenue Partners [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:35Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhUAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Barry.McKinnon@yorkcountygov.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]\r\n\r\nI am currently out of the office.  I will respond to your email when I return to the office on February 24, 2025.\r\nPlease contact Ms. Teresa Bass if you need immediate assistance.\r\nTeresa.Bass@Yorkcountygov.com\r\n\r\n\r\n\r\nBarry McKinnon, P.E.\r\nUtility Program Manager\r\nEngineering\r\nYork County Government\r\n\r\n________________________________\r\n\r\nbarry.mckinnon@yorkcountygov.com\r\nPhone:803-818-5781\r\n\r\n\r\n\r\n       [cid:logo_ccdf8981-cba4-4eb5-9abc-30b7830ad94d.png]     [cid:Facebook_39bbb7bd-ea9f-458b-ba84-03ff3f2ce399.png]    [cid:Twitter_6aba590a-5e26-4ec6-88b4-5a6171d3a81a.png] \r\n\r\nCONFIDENTIALITY NOTICE: This e-mail message, including any attachments, is for the sole use of the intended recipient(s) and may contain confidential, proprietary, and/or privileged information protected by law. If you are not the intended recipient, you may not read, use, copy, or distribute this e-mail message or its attachments. If you believe you have received this e-mail message in error, please contact the sender by reply e-mail or telephone immediately and destroy all copies of the original message. \"Any information provided on this email, including any attachments, may be subject to the South Carolina Freedom of Information Act and may be disclosed to third parties in accordance with applicable law.\"\r\n[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:35Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhVAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "tsmith@kpud.org",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL][EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:38Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhWAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Yue@irwd.com",
+            "subject": "Automatic reply: [EXTERNAL] The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ I will be out of the office until Tuesday, 2/25/25. If this is an urgent matter, please contact Tammy Do at 949-453-5836, DO@irwd.com.[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:39Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhXAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "RCrouse@kennebecwater.org",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ Thank you for your message. I am on vacation through February 19th.  I will respond to your message after I return.  If you need immediate assistance, please call KWD's business office at (207) 872-2763. Thank you.Roger [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:41Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhYAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "mfullner@vomwd.org",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Hello and thank you for your email,  I will be out of the office with limited access to internet/email until Monday February 24th.  If you need immediate assistance, please call our main office line at 707-996-1037. Otherwise, I will respond upon my return.  Thank you,  Matt  [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:41Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhZAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Amy.Heidema@denverwater.org",
+            "subject": "Automatic reply: [EXTERNAL]:  The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Hello, ﻿I am out of the office until Monday, March 3.  I will respond to your message when I return .  If you need immediate assistance, please contact Gary.Boothe@denverwater.org. Thank you,   Amy Heidema, P.E. | Engineering | Director of Engineering - Property & Distribution Denver Water | t: 303.628.6625| c: 303.514.3479 1600 West 12th Ave | Denver, CO 80204-3412 2  [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:42Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhaAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "cqi@sfwmd.gov",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I am out of the office and will be back on Monday, 2/24/2025. If you need immediate assistance with Central Region operations, please contact Kwaku Oben. Thanks![EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:43Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhbAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Harry.Myers@culliganwater.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I will be out of the office on Wednesday, February 19th, and returning on Thursday,February 20th.   If you have a need or have a concern please email me and I will respond to your message when I return back to the Office. Thank You.[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:44Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhcAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "kkoelliker@mcbwsd.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ Hello,I am currently out of the office until 2/24/2025  If you need immediate assistance please contact our office at 970-349-7575 or the On-Call Water Operator at 970-209-5768. Best Regards,Kyle KoellikerMt. CB Water Department Supervisor [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:45Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhdAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Nicholas.Richardson@edcgov.us",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Hello and thank you for your email. I will be out of the office beginning 2/15/25, returning 2/24/25. If you need immediate assistance with a Facilites issue, please contact the Facilites Main line at (530)-621-5890. For after hours emergencies in South Lake Tahoe (4pm-7:30am), please call (530)-663-6746.  Thanks, Nick RichardsonFacilities Operations SupervisorCounty of El Dorado/Chief Administrative Office, Facilities Office: (530)-573-3410Cell: (916)-276-6235After hours emergencies in South Lake Tahoe (4pm-7:30am): (530)-663-6746nicholas.richardson@edcgov.usWARNING: This email and any attachments may contain private, confidential, and privileged material for the sole use of the intended recipient. Any unauthorized review, copying, or distribution of this email (or any attachments) by other than the intended recipient is strictly prohibited. If you are not the intended recipient, please contact the sender immediately and permanently delete the original and any copies of this email and any attachments. [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:47Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyheAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "d.mandoza@kurita-water.com",
+            "subject": "Automatic reply: [EXT]The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿I will be out of  office February 19th, 2025 through February 23rd, 2025.  If you need assistance please contact KAI_TechMarketing@kurita-water.com. This e-mail message and all attachments transmitted with it contain confidential and proprietary business information owned by Kurita America Inc. and intended solely for the use of the addressee. The transmission of this e-mail may be legally privileged. If the recipient of this message is not the intended person or entity, you are hereby notified that any reading, dissemination, distribution, copying, or other use of this message, its contents, hyperlinks, and attached files of any kind is strictly prohibited. If you have received this message in error, please notify the sender immediately by a reply to this electronic mail message and delete this message and all copies and backups thereof. All rights to the information contained in this e-mail are reserved by Kurita America Inc. [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:47Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhfAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "rbartlet@sfwmd.gov",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I am currently out of the office and will return on Wednesday March 5th. I will have limited access to phone and email and will respond as soon as possible.  Thanks  rb  [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:48Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhgAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "daniel.hall@southernpipe.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I will be out of the office 2/18/25  if you need assistance please call 225-332-8432.  [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:48Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhhAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "dcafferty@etwd.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I will be out of the office until Monday, January 3.  I will respond upon my return. If you require immediate assistance please contact the District at (949) 837-7050. Happy Holidays. [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:50Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhiAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Nicole.Babyak@denverwater.org",
+            "subject": "Automatic reply: [EXTERNAL]:  The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ ﻿Hello and thank you for your email!I am away from the office Tuesday, February 18th through Friday, February 21st.  If you need immediate assistance, please contact Stephanie Riley at Stephanie.Riley@denverwater.org. Otherwise, I will respond to emails when I return.Have a great day!Nicole BabyakDenver Water | SCO Group LeadershipCell phone: 720.280.1201[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:50Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhjAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "saskine@vwd.org",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Hello, I am on vacation from February 13, 2025 thru Wednesday, February 26, 2025. Please contact Senior Water Systems Operator Richie Arballo or the duty operator's cell phone during my absence. Sincerely, Shawn Askine | Water Systems SupervisorVallecitos Water District201 Vallecitos de Oro, San Marcos CA 92069Office: (760) 744-0460 x268Email: saskine@vwd.org              [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:51Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhkAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "CThomas@cvwd.org",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I am currently out of the office and will be returning on Tuesday, February 25th, 2025. If you require immediate assistance, please contact our Water Management staff @ (760)398-2661 ext. 2113  or email us at WaterManagement@cvwd.org Thanks, Chris ThomasConservation Program Specialist ICoachella Valley Water District(760)398-2661 Ext. 3408[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:54Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhlAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "sisuga@kauaiwater.org",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ I will be out of the office from 2/18/25.  I shall be back in the office on 2/19/25.  I will be checking emails periodically. Thanks Scott[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:55Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhmAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "RWoods@mnwd.com",
+            "subject": "Automatic reply: [CAUTION]The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ Greetings.....I will be out of the office on vacation until Monday, February 24th with limited access to e-mail.  I'll respond to everything as quickly as possible when I return.  In the event of an urgent matter that cannot wait, please contact Tim Bonita at (949)-795-6779 or tbonita@mnwd.com.  Thanks! Rod[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:56Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhnAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "sjohnson@jbwd.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ ﻿Hello,  Thank you for reaching out. I am currently out of the office and will return on Tuesday, February 25th. I will be happy to respond to your message upon my return. For urgent inquiries, please contact Lisa Thompson at lthompson@jbwd.com. Sarah [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:58Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhoAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "EAbisaab@hrsd.com",
+            "subject": "Automatic reply: [EXTERNAL] The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I will be out of the office from February 18 to February 21. Please contact Chris Stephan (757-777-7511 or cstephan@hrsd.com), the Acting Chief Operating Officer in my absence. Thank You![EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:59Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhpAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "nrothschild@barclaywater.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I am traveling for work until 2/21/25. For emergencies, please contact environmentalgroup@barclaywater.com or egcompliance@barclaywater.com    Nora Rothschild Vice President - Environmental GroupBarclay Water Management, Inc.55 Chapel Street, Ste.300, Newton, MA 02458 Edison, NJ | Hagerstown, MDDirect: 857-404-0367 Mobile: 617-631-4672 www.barclaywater.comnrothschild@barclaywater.comFollow us on LinkedIn! Barclay Water Management has been acquired by Ecolab, a global leader in water, hygiene infection prevention solutions and services. Learn more.[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:59Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhqAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "doug.thomas@ccwa.us",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Please be advised that I am currently out of the office and returning on Feb 21st. Please expect a delay in responses.   Sincerely, Doug ThomasCCWA[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:31:59Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhrAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "drotter@tmwa.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ Hello,I’m currently out of the office and will be back Thursday. Please contact Dave Diegle or Dave Kershaw if you need something sooner. Thanks,Danny***Our vision is to enhance the quality of life in the Truckee Meadows by delivering exceptional, customer-focused water services.*** [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:00Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhsAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "tnoyes@haleyward.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ ﻿﻿I will be away until February 24, 2025.   I will NOT be able to respond to emails while away. If your matter is urgent, please call (207) 989-4824 and someone should be able to help you.[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:01Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhtAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "RStanley@fcwrd.org",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ I will be back at my desk at 7am, Monday, 2/24/25.During this time away from my office I will not be checking my email. If you have a need that cannot wait until my return, please contact Mac or Mike. Thank you.    [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:01Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhuAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "jorganp@wd49.org",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿Hello,I am out of the office until 2/24/2025. I'll have limited access to email. If you need immediate assistance please call our office, 206-242-8535. Have a great day. Jorgan   [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:02Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhvAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Derek.Kovalcik@nexuswg.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿I will be working remote the afternoon on Tuesday the 18th - Thursday 20th. I will have limited internet and phone access. If an emergency please call my cell at 346.823.8499[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:06Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhwAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Ty.Knight@fluenceenergy.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I am working in the Vietnam factory. There will be a slight delay with answering emails. For urgent matters, please send me a Teams chat. [ X ] on a business trip[  ] on PTO [ X ] in the Vietnam Factory[  ] on public holiday[  ] on sick leave ThanksTy Knight949-401-0476 cell[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:06Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhxAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Ferri.Trovinger@nexuswg.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Thank you for your email, I am currently out of the office.   For immediate attention contact Customer Experience through the My Utility Account app.[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:10Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhyAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Fran.Nicklous@fluenceenergy.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]﻿ I am currently out of the office with limited access to emails.  I will be returning to the office February 22nd. Thank you,Fran Nicklous [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:11Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyhzAAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "James.Fasulo@colliercountyfl.gov",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]\r\n\r\nI will be out of  the office & may not have access to e-mails duriing my absence .Typically i am schedueld off on Fridays.   If you need immediate assistance please contact : Jodie Bertges or Mario Menendez: 252-2277  in my absence.  If Shop related issues, please contact Mathew Schiller 252-4134, Clete Mills 239-252-4142 or the main number for Fleet Management 252-2277.  For after hours emergencies, please contact the on-call mechanic numeric pager @ 982-6265 or 398-1895 cell.\r\n\r\n\r\nJames Fasulo\r\nManager - Fleet\r\nFleet Management\r\n\r\nOffice:239-252-4118\r\nMobile:239-537-6402\r\n\r\n2901 County Barn Rd\r\nNaples, Florida 34112\r\nJames.Fasulo@colliercountyfl.gov\n[cid:CountyLogo-FullColor_948165c4-9665-41b4-9162-fbb16abff557.png]\n[cid:Facebook_0522f546-5e75-4698-95f9-f15590a3defe.png] [cid:Instagram_a8da4774-4b5b-4ad1-8d23-20e69b3b605d.png]    [cid:X-Twitter_8d678efc-bd14-44ce-97cf-7fbab1003b00.png]     [cid:Youtube_0078f7f1-7789-4afd-a015-50689fe1f99b.png]    [cid:311IconforSignature_87c558eb-83f5-449b-87c1-3cc5ac8b0859.png] \r\n\r\n\r\n\r\n\r\n________________________________\r\n\r\nUnder Florida Law, e-mail addresses are public records. If you do not want your e-mail address released in response to a public records request, do not send electronic mail to this entity. Instead, contact this office by telephone or in writing.\r\n[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:17Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyh0AAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Jason.Hansen@culliganwater.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]I will be on vacation 2-15-2025 returning 2-24-2025 If you need assistance call the office at 320-629-3130[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:19Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyh1AAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "william.bulloss@westernvawater.org",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Hello, I am out of the office and will respond to your message when I return.   [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:23Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyh2AAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "atocker@ieua.org",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Hello, thank you for your email. I will be away from the office Monday, February 17 until Monday, February  24. For any immediate assistance, please contact Rodney Williams (rwilliams@ieua.org).  If you do not require immediate assistance, I will respond to your email upon my return. Thank you! Alyssa Tocker Administrative Assistant II\"Securing Tomorrow's Water, Today\"6075 Kimball Ave / Chino, California 91708Tel: 909-993-1910 / Fax: EMail: atocker@ieua.org Website: www.ieua.org [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:26Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyh3AAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "jhuntington@NSUWater.com",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]Thank you for your email I am currently out of the office and traveling. I will be checking my emails,but  please be patient with me in my reposnse. I will be returning on February 24th 2025  I will be checking emails and responding in the evenings In case of emergency please contact Tia Brown at tbrown@nsuwater.com Thank you for your patience in my absence and apologies for any inconvenience this may cause. JimThis message may contain privileged and confidential information. If you are not an intended recipient, please note that any disclosure, dissemination, distribution, or copying of this information is prohibited. [EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:35Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        },
+        {
+            "email_id": "AAMkADUyNWJkNzc1LWUzOTYtNDA3NC05YzUxLWM4YjM5YzkxMzA4OQBGAAAAAAA8gPqitF6FSbY_38fmfSv5BwAh1pkWyVTVQ6n1J3WQcgRhAAAAAAEMAAAh1pkWyVTVQ6n1J3WQcgRhAAAAIyh4AAA=",
+            "to": "watertreatment@industry411.com",
+            "from": "Kirk.Peters@colliercountyfl.gov",
+            "subject": "Automatic reply: The Other Border Battle: Water Scarcity on the U.S.-Mexico Line",
+            "body": "[EXTERNAL MAIL]\r\n\r\nI will be out of office  from 02/13/25 -02/23/25. contact Marissa Baker at Marissa.Baker@colliercountyfl.gov or Eric Short at 239-315-2149.\r\n\r\n________________________________\r\n\r\nUnder Florida Law, e-mail addresses are public records. If you do not want your e-mail address released in response to a public records request, do not send electronic mail to this entity. Instead, contact this office by telephone or in writing.\r\n[EXTERNAL MAIL]",
+            "recieved_time": "2025-02-19T16:32:36Z",
+            "group": {
+                "group_id": null,
+                "keyword_id": null
+            }
+        }
+    ]
+}
