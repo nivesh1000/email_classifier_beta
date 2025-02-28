@@ -76,7 +76,7 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
                             "from": from_address,
                             "subject": subject,
                             "body": clean_body,
-                            "recieved_time": received_time,  # Added timestamp
+                            "received_time": received_time,  # Added timestamp
                             "group": [],
                         }
                     )
@@ -93,7 +93,7 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
                         post_response = requests.post(
                             POST_API_URL, json=classified_emails, headers=post_headers
                         )
-                        post_response.raise_for_status()
+                        # post_response.raise_for_status()
 
                         response_json = post_response.json()
 
