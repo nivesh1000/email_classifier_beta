@@ -1,5 +1,4 @@
 import os
-from dotenv import load_dotenv
 from msal import PublicClientApplication
 from config import TENANT_ID, CLIENT_ID, SCOPES
 from typing import Optional
@@ -44,9 +43,6 @@ class UserAuthenticator:
         self.app = PublicClientApplication(self.client_id, authority=self.authority)
         self.access_token: Optional[str] = None
         self.refresh_token: Optional[str] = None
-
-        # Load environment variables
-        load_dotenv()
 
     def authenticate_user(self) -> str:
         """
