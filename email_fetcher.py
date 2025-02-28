@@ -32,7 +32,7 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
     email_list = []  # To store email data
     classified_emails = []  # To store classified emails
 
-    POST_API_URL = ""
+    POST_API_URL = "https://staging.jsjdmedia.com/api/emails/store"
     try:
         while next_url:  # Keep iterating until there are no more pages
             response = requests.get(next_url, headers=headers)
