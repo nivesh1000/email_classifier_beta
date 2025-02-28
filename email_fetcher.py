@@ -94,14 +94,11 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
                         post_response = requests.post(
                             POST_API_URL, json=classified_emails, headers=post_headers
                         )
-                        post_response.raise_for_status()
+                        # post_response.raise_for_status()
 
-                        response_json = post_response.json()
+                        # response_json = post_response.json()
 
-                        if (
-                            post_response.status_code == 201
-                            and response_json.get("status") == "success"
-                        ):
+                        if post_response.status_code == 201:
                             logger.info(
                                 f"Successfully sent emails. API Response: {post_response.status_code} - {post_response.text}"
                             )
