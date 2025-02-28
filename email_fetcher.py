@@ -5,12 +5,12 @@ import requests
 from bs4 import BeautifulSoup
 from typing import List, Dict
 from filter import classify_emails
-import aiohttp
-import asyncio
 
 # Configure logger
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
+
+POST_API_URL = "https://staging.jsjdmedia.com/api/emails/store"
 
 
 def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
@@ -32,7 +32,7 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
     email_list = []  # To store email data
     classified_emails = []  # To store classified emails
 
-    POST_API_URL = "https://staging.jsjdmedia.com/api/emails/store"
+    # POST_API_URL = os.environ["POST_API_URL"]
     try:
         while next_url:  # Keep iterating until there are no more pages
             response = requests.get(next_url, headers=headers)
@@ -82,6 +82,7 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
                     )
                 classified_emails = classify_emails(email_list, filters)
                 classified_emails = {"data": classified_emails}
+                logger.info(classified_emails)
                 # Send classified emails via POST request
                 if classified_emails:
                     try:
@@ -93,7 +94,7 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
                         post_response = requests.post(
                             POST_API_URL, json=classified_emails, headers=post_headers
                         )
-                        # post_response.raise_for_status()
+                        post_response.raise_for_status()
 
                         response_json = post_response.json()
 
@@ -114,7 +115,7 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
 
                     except requests.RequestException as e:
                         logger.error(f"Failed to send emails: {str(e)}")
-                        # time.sleep(1)  # Delay in case of a request failure
+                        # time.sleep(2)  # Delay in case of a request failure
 
                     email_list = []
                 # Check if there's a next page

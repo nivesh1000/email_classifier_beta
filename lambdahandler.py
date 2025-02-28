@@ -40,7 +40,7 @@ def generate_today_email_url() -> str:
     # Construct the URL for filtering emails by receivedDateTime
     url = (
         f"https://graph.microsoft.com/v1.0/me/messages?"
-        f"$top=5&"
+        f"$top=100&"
         f"$filter=receivedDateTime ge {start_time} and receivedDateTime le {end_time}"
         f"&$orderby=receivedDateTime DESC"
     )
@@ -80,7 +80,7 @@ def generate_all_email_url() -> str:
     try:
         url = (
             "https://graph.microsoft.com/v1.0/me/messages?"
-            "$top=5&"
+            "$top=100&"
             "$orderby=receivedDateTime"
         )
         return url
@@ -110,7 +110,7 @@ def generate_last_3_days_email_url() -> str:
     # Construct the URL for filtering emails by receivedDateTime
     url = (
         f"https://graph.microsoft.com/v1.0/me/messages?"
-        f"$top=5&"
+        f"$top=100&"
         f"$filter=receivedDateTime ge {start_time} and receivedDateTime le {end_time}"
         f"&$orderby=receivedDateTime DESC"
     )
@@ -134,6 +134,7 @@ def lambda_handler(event):
             filters = fetch_groups()
             email_url = generate_today_email_url()
             # email_url = generate_all_email_url()
+            # email_url = generate_last_3_days_email_url()
             result = fetch_emails(email_url, ACCESS_TOKEN, filters)
             return result
         except Exception as e:
