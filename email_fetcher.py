@@ -110,11 +110,11 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
                             logger.warning(
                                 f"Unexpected API response: {post_response.status_code} - {post_response.text}"
                             )
-                            time.sleep(2)  # Delay before retrying or proceeding further
+                            # time.sleep(2)  # Delay before retrying or proceeding further
 
                     except requests.RequestException as e:
                         logger.error(f"Failed to send emails: {str(e)}")
-                        time.sleep(1)  # Delay in case of a request failure
+                        # time.sleep(1)  # Delay in case of a request failure
 
                     email_list = []
                 # Check if there's a next page
