@@ -50,24 +50,17 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
                     # logger.info(f"Processing email: {email}")
                     # Extract required fields
                     email_id = email.get("id", "Unknown ID")
-                    from_address = (
-                        email.get("from", {})
-                        .get("emailAddress", {})
-                        .get("address", "N/A")
-                    )
+                    from_address = email.get("from", {})
                     to_recipients = email.get("toRecipients", [])
-                    to_address = (
-                        to_recipients[0].get("emailAddress", {}).get("address", "N/A")
-                        if to_recipients
-                        else "N/A"
-                    )
-                    subject = email.get("subject", "No subject")
-                    raw_body = email.get("body", {}).get("content", "No body available")
+                    to_address = to_recipients[0].get("emailAddress", {})
+                    subject = email.get("subject", "")
+                    raw_body = email.get("body", {}).get("content", "")
                     clean_body = (
                         BeautifulSoup(raw_body, "html.parser").get_text().strip()
                     )
-                    received_time = email.get("receivedDateTime", "Unknown Timestamp")
-
+                    received_time = email.get("receivedDateTime", "")
+                    if not clean_body and not subject:
+                        continue
                     # Append the email dictionary to the list
                     email_list.append(
                         {

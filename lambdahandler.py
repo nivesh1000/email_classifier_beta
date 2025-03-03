@@ -132,6 +132,10 @@ def lambda_handler(event):
     elif task == "fetch_emails":
         try:
             filters = fetch_groups()
+            active_groups = []
+            for group in filters["data"]["groups"]:
+                if group.get("status") == "active":
+                    active_groups.append(group)      
             email_url = generate_today_email_url()
             # email_url = generate_all_email_url()
             # email_url = generate_last_3_days_email_url()
