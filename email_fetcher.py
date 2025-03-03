@@ -10,7 +10,10 @@ from filter import classify_emails
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-POST_API_URL = "https://staging.jsjdmedia.com/api/emails/store"
+
+def post_batch(classified_emails):
+
+    POST_API_URL = "https://staging.jsjdmedia.com/api/emails/store"
 
 
 def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
@@ -57,16 +60,20 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
                     )
                     to_recipients = email.get("toRecipients", [])
                     to_address = (
-                        to_recipients[0].get("emailAddress", {}).get("address", "N/A")
+                        to_recipients[0].get(
+                            "emailAddress", {}).get("address", "N/A")
                         if to_recipients
                         else "N/A"
                     )
                     subject = email.get("subject", "No subject")
-                    raw_body = email.get("body", {}).get("content", "No body available")
+                    raw_body = email.get("body", {}).get(
+                        "content", "No body available")
                     clean_body = (
-                        BeautifulSoup(raw_body, "html.parser").get_text().strip()
+                        BeautifulSoup(
+                            raw_body, "html.parser").get_text().strip()
                     )
-                    received_time = email.get("receivedDateTime", "Unknown Timestamp")
+                    received_time = email.get(
+                        "receivedDateTime", "Unknown Timestamp")
 
                     # Append the email dictionary to the list
                     email_list.append(
@@ -88,7 +95,8 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
                     try:
                         post_headers = {"Content-Type": "application/json"}
                         logger.info(
-                            f"Sending {len(classified_emails)} classified emails to API..."
+                            f"Sending {len(classified_emails)
+                                       } classified emails to API..."
                         )
 
                         post_response = requests.post(
@@ -100,13 +108,15 @@ def fetch_emails(email_url: str, access_token: str, filters) -> List[Dict]:
 
                         if post_response.status_code == 201:
                             logger.info(
-                                f"Successfully sent emails. API Response: {post_response.status_code} - {post_response.text}"
+                                f"Successfully sent emails. API Response: {
+                                    post_response.status_code} - {post_response.text}"
                             )
                             # Only update next_url if the response matches expected success criteria
                             next_url = data.get("@odata.nextLink", None)
                         else:
                             logger.warning(
-                                f"Unexpected API response: {post_response.status_code} - {post_response.text}"
+                                f"Unexpected API response: {
+                                    post_response.status_code} - {post_response.text}"
                             )
                             # time.sleep(2)  # Delay before retrying or proceeding further
 
